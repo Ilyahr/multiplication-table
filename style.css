@@ -1,0 +1,62 @@
+a:active, a:focus, a:link{
+    outline: none;
+    text-decoration: none;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(120deg, #364595, #0f1a63);
+}
+
+.title-box{
+    min-height: 100%;
+    width: 90%;
+    padding-bottom: 10%;
+    margin: 0 auto;
+}
+
+.title{
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 25% auto;
+    display: table;
+}
+
+.start-training-box{
+    margin: 0;
+    color: white;
+    width: max-content;
+    display: block;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 20px 45px;
+    background: #3aa653;
+    border-radius: 30px;
+}
+
+.btn-box{
+    display: table;
+    margin: 0 auto 15%;
+}
+
+
+.main-logo{
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.Math-logo{
+    font-weight: 300;
+}
+
