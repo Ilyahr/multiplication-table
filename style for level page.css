@@ -1,0 +1,103 @@
+a:active, a:focus, a:link{
+    outline: none;
+    text-decoration: none;
+}
+
+
+
+body{
+    margin: 0;
+}
+
+.title-box{
+    width: 90%;
+    height: 90vh;
+    position: relative;
+    background: linear-gradient(120deg, #364595, #0f1a63);
+    padding: 0 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.title{
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0 auto;
+    display: table;
+}
+
+.main-logo{
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.Math-logo{
+    font-weight: 300;
+}
+
+tbody{
+    box-sizing: border-box;
+}
+
+table {
+    width: 250px;
+    border-collapse: collapse;
+    border: 3px solid grey;
+
+}
+
+th {
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    border: 2px solid grey;
+    width: calc(100%/3);
+}
+
+.selector-box{
+    padding: 0 8%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description{
+    display: flex;
+    width: 50vw;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+hr{
+    border: none; /* Убираем границу */
+    color: black;
+    background-color: black;
+    height: 5px; /* Толщина линии */
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 30px;
+}
+input {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+}
+
+button{
+    display: none;
+}
+
