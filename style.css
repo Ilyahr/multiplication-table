@@ -7,22 +7,56 @@ body{
     margin: 0;
 }
 
-@media (max-width: 600px) {
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+{
     .title{
-        font-size: 70px;
-    }
+    font-size: 70px;
+}
     .start-training-box{
         padding: 30px 67px;
+        font-size: 42px;
+        border-radius: 40px;
+    }
+    .main-logo{
+        font-size: 65px;
     }
 }
-@media (min-width: 600px) {
+
+@media  only screen
+and (min-width : 813px){
     .title{
         font-size: 50px;
     }
     .start-training-box{
         padding: 20px 45px;
+        font-size: 22px;
+        border-radius: 30px;
+    }
+    .main-logo{
+        font-size: 45px;
     }
 }
+
+
+
+/*@media (min-width: 768px) {*/
+/*    .title{*/
+/*        font-size: 70px;*/
+/*    }*/
+/*    .start-training-box{*/
+/*        padding: 30px 67px;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 768px) {*/
+/*    .title{*/
+/*        font-size: 50px;*/
+/*    }*/
+/*    .start-training-box{*/
+/*        padding: 20px 45px;*/
+/*    }*/
+/*}*/
 
 
 
@@ -55,10 +89,10 @@ body{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 22px;
+    /*font-size: 22px;*/
     letter-spacing: 1px;
     background: #3aa653;
-    border-radius: 30px;
+    /*border-radius: 30px;*/
 }
 
 .btn-box{
@@ -71,7 +105,8 @@ body{
     color: white;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
-    font-size: 45px;
+    /*font-size: 45px;*/
+
 }
 
 .Math-logo{
