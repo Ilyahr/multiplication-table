@@ -84,14 +84,15 @@ body{
 @media only screen and (max-width : 400px)
 {
     .title{
-        font-size: 70px;
+        font-size: 27px;
+        line-height: 40px;
     }
     .start-training-box{
-        padding: 30px 67px;
-        font-size: 42px;
-        border-radius: 40px;
+        padding: 15px 30px;
+        font-size: 17px;
+        border-radius: 30px;
     }
     .main-logo{
-        font-size: 65px;
+        font-size: 35px;
     }
 }
