@@ -21,9 +21,9 @@ body{
 
 hr{
     border: none; /* Убираем границу */
-    color: black;
-    background-color: black;
-    height: 5px; /* Толщина линии */
+    color: #422694;
+    background-color: #422694;
+    height: 3px; /* Толщина линии */
     width: 100%;
 }
 
@@ -47,7 +47,7 @@ button{
     width: 90%;
     height: 94vh;
     position: relative;
-    background: linear-gradient(120deg, #364595, #0f1a63);
+    background: linear-gradient(120deg, #683CE8, #422694);
     padding: 0 5% 17%;
     display: flex;
     flex-direction: column;
@@ -89,7 +89,7 @@ table {
 th {
     color: white;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 45px;
     border: 2px solid grey;
     width: calc(100%/3);
@@ -118,7 +118,7 @@ table:nth-child(2){
     color: white;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 
@@ -145,7 +145,7 @@ table:nth-child(2){
     font-family: 'Fira Sans', sans-serif;
     font-size: 35px;
     font-weight: 300;
-    background-color: red;
+    background-color: #FF674F;
     /*flex-grow: 1;*/
     z-index: 0;
 }
@@ -163,7 +163,7 @@ table:nth-child(2){
     font-family: 'Fira Sans', sans-serif;
     font-size: 35px;
     font-weight: 300;
-    background-color: green;
+    background-color: #39B865;
     /*flex-grow: 1;*/
     z-index: 0;
 }
