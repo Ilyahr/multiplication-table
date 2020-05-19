@@ -3,18 +3,52 @@ a:active, a:focus, a:link{
     text-decoration: none;
 }
 
+button:active, button:focus, button:link{
+    border: none;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+}
 
+p{
+    margin: 0;
+}
 
 body{
     margin: 0;
 }
 
+
+hr{
+    border: none; /* Убираем границу */
+    color: black;
+    background-color: black;
+    height: 5px; /* Толщина линии */
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 30px;
+}
+input {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+}
+
+button{
+    display: block;
+
+}
+
 .title-box{
     width: 90%;
-    height: 90vh;
+    height: 94vh;
     position: relative;
     background: linear-gradient(120deg, #364595, #0f1a63);
-    padding: 0 5% 10%;
+    padding: 0 5% 17%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,8 +103,17 @@ th {
     justify-content: space-between;
 }
 
+table:first-child{
+    margin-right: 5%;
+}
+table:nth-child(2){
+    margin-left: 5%;
+}
+
+
 .description{
     display: flex;
+    margin-top: 5%;
     width: 50vw;
     color: white;
     font-family: 'Fira Sans', sans-serif;
@@ -78,26 +121,201 @@ th {
     font-size: 30px;
 }
 
-hr{
-    border: none; /* Убираем границу */
-    color: black;
-    background-color: black;
-    height: 5px; /* Толщина линии */
-    width: 100%;
+
+
+
+
+
+.workspace-box{
+    height: 100vh;
+    width: 100vw;
 }
 
-label {
-    display: block;
-    font-size: 30px;
+.work-area{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
 }
-input {
-    margin-bottom: 20px;
-    width: 300px;
-    height: 50px;
-    font-size: 30px;
+
+.red-box{
+    text-align: left;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    background-color: red;
+    /*flex-grow: 1;*/
+    z-index: 0;
+}
+
+.red-box h3{
+    margin-left: 10%;
+}
+
+.green-box h3{
+    margin-right: 10%;
+}
+.green-box{
+    text-align: right;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    background-color: green;
+    /*flex-grow: 1;*/
+    z-index: 0;
+}
+
+.form-box{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid grey;
+    border-radius: 40px;
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    top: 140%;
+    /*right: 50%;*/
 }
 
 button{
-    display: block;
+    margin: 10% auto 0;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 15px 40px;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    border: none;
+}
 
+input{
+    width: 150px;
+    height: 100px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+}
+
+#task:focus{
+    outline: none;
+}
+
+#result:focus{
+    text-align: center;
+    outline: none;
+}
+
+.res-box{
+    display: flex;
+    margin: 5% auto 0;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.result-text{
+    margin-top: 2%;
+    margin-right: 5%;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.task{
+    width: 200px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    margin: 5% auto 0;
+    display: block;
+    padding: 10px;
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width : 800px)
+{
+    .main-logo{
+        font-size: 40px;
+    }
+    .description{
+        display: flex;
+        margin: 0;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width : 740px)
+{
+    .task{
+
+    }
+    .result-text{
+        width: min-content;
+        font-size: 40px;
+        margin: 0 auto 5%;
+    }
+    .res-box{
+        display: block;
+        width: min-content;
+    }
+}
+@media only screen and (max-width : 500px)
+{
+    .false-pointer-text{
+        font-size: 30px;
+    }
+    .true-pointer-text{
+        font-size: 30px;
+    }
+    table:first-child{
+        margin: 0 auto;
+    }
+    table:nth-child(2){
+        margin: 0 auto;
+    }
+    table{
+        width: 50%;
+        margin: 0 auto;
+        order: 1;
+    }
+    .main-logo{
+        font-size: 35px;
+    }
+
+    .description{
+        order: 0;
+        display: flex;
+        margin: 0;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    th {
+        font-weight: 300;
+        font-size: 30px;
+    }
+    .selector-box{
+        display: flex;
+        flex-flow: wrap
+    }
+    hr{
+        height: 3px;
+        margin-top: 40px;
+    }
 }
