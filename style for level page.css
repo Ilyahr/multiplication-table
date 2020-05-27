@@ -18,6 +18,9 @@ body{
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 hr{
     border: none; /* Убираем границу */
@@ -318,4 +321,30 @@ input{
         height: 3px;
         margin-top: 40px;
     }
+}
+
+img{
+    width: 25px;
+    height: 12px;
+    margin: 40% auto;
+}
+
+
+.shape{
+    justify-content: center;
+    margin: 1% 0;
+    width: 80px;
+    height: 80px;
+
+
+    display: flex;
+}
+
+.back{
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 80px;
+    width: min-content;
+    position: sticky;
+    left: 40px;
+    top: 88%;
 }

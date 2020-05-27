@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <header class="title-box">
+    <header class="title-box" id="title">
         <a href="index.html"><h1 class="main-logo"><span class="Math-logo">Math</span>Learn</h1></a>
         <hr>
         <div class="selector-box">
@@ -56,7 +56,10 @@
     </header>
     <section class="workspace-box">
         <div class="work-area">
-            <div class="red-box"><h3 class="false-pointer-text">Не верно:</h3><h3 class="false-pointer">0</h3></div>
+            <div class="red-box">
+                <h3 class="false-pointer-text">Не верно:</h3><h3 class="false-pointer">0</h3>
+                <div class="back"><a href="#title" ><div class="shape"><img src="assets/Shape%202.png" alt="shape"></div></a></div>
+            </div>
             <div class="green-box"><h3 class="true-pointer-text">Верно:</h3><h3 class="true-pointer">0</h3></div>
             <div class="form-box">
                 <form id="form">
@@ -69,6 +72,7 @@
                 </form>
             </div>
         </div>
+<!--        <div class="back"><a href="#title" ><div class="shape"><img src="assets/Shape%202.png" alt="shape"></div></a></div>-->
     </section>
 </body>
 <script src="script.js"></script>
