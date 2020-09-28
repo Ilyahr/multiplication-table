@@ -279,6 +279,7 @@ input{
         width: min-content;
     }
 }
+
 @media only screen and (max-width : 500px)
 {
     .false-pointer-text{
@@ -335,8 +336,6 @@ img{
     margin: 1% 0;
     width: 80px;
     height: 80px;
-
-
     display: flex;
 }
 
